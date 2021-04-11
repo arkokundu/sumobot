@@ -25,21 +25,22 @@ print("Right hand : " , right_hand.getPhysicalPos())
 
 
 
-left_hand.moveTimeWrite(239,time=1000)
-time.sleep(1)
-right_hand.moveTimeWrite(180,time=1000)
+left_hand.moveTimeWrite(239,time=500)
+time.sleep(0.5)
+right_hand.moveTimeWrite(180,time=500)
 
-time.sleep(2)
+time.sleep(0.5)
 
-right_hand.moveTimeWrite(240,time=1000)
-time.sleep(1)
-left_hand.moveTimeWrite(200,time=1000)
+right_hand.moveTimeWrite(240,time=500)
+time.sleep(0.5)
+left_hand.moveTimeWrite(200,time=500)
+
 t = 0
-
-##while True:
- #   right_hand.moveTimeWriteRel(sin(t)*10)
-  #  left_hand.moveTimeWriteRel(sin(t)*10)
-  #  t += 0.005
+time.sleep(0.5)
+while True:
+    right_knee.moveTimeWrite(165 + sin(t)*10)
+    left_knee.moveTimeWrite(88 +  sin(t)*10)
+    t += 0.01
 
 #left_leg.moveTimeWriteRel(10, 3000)
 #time.sleep(1)
