@@ -12,10 +12,12 @@ right_knee = LX16A(3)
 right_thigh = LX16A(2)
 right_hip = LX16A(1)
 right_hand = LX16A(4)
+left_hand = LX16A(5)
 
-left_knee.moveTimeWrite(88,time=1000)
-left_thigh.moveTimeWrite(140,time=1000)
-right_knee.moveTimeWrite(164,time=1000)
-right_thigh.moveTimeWrite(97,time=1000)
-#right_hip.moveTimeWrite(15682,time=1000)
-left_hip.moveTimeWrite(192,time=1000)
+t = 0
+
+left_hip.moveTimeWriteRel(30,time=1000)
+time.sleep(1)
+#left_knee.moveTimeWriteRel(30,time=1000)
+right_hip.moveTimeWriteRel(-30,time=1000)
+
